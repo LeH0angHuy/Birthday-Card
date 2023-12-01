@@ -52,6 +52,19 @@
     left: 50%;
   }
   
+  .front {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cake-image {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 100%;
+  }
+  
   .outside {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -71,49 +84,9 @@
     transform: rotateX(0deg);
   }
   
-  .front {
-    background-color: #ffffff;
-  }
-  
   .back {
     transform: rotateY(180deg);
     background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
-  }
-  
-  .cake {
-    width: 100%;
-    position: absolute;
-    bottom: 30px;
-  }
-  
-  .top-layer,
-  .middle-layer,
-  .bottom-layer {
-    height: 80px;
-    width: 240px;
-    background-repeat: repeat;
-    background-size: 60px 100px;
-    background-position: 28px 0;
-    background-image: linear-gradient(
-        transparent 50px,
-        #fedbab 50px,
-        #fedbab 60px,
-        transparent 60px
-      ),
-      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    margin: auto;
-  }
-  
-  .middle-layer {
-    transform: scale(0.85);
-    top: 6px;
-  }
-  
-  .top-layer {
-    transform: scale(0.7);
-    top: 26px;
   }
   
   .candle {
